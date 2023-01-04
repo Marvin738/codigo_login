@@ -1,0 +1,31 @@
+<?php
+$correo_electronico = $_POST['correo'];
+
+$usuario = $_POST['usuario'];
+
+$nombre = $_POST['Nombre'];
+
+$clave = $_POST['pass'];
+
+
+$servername = "localhost";
+$database = "registros";
+$username = "root";
+$password = "";
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $database);
+// Check connection
+
+ 
+echo "Connected successfully";
+ 
+$sql = "INSERT INTO usuarios(correo_electronico, usuario, nombre, Pass) VALUES ('$correo_electronico', '$usuario', '$nombre', '$clave')";
+if (mysqli_query($conn, $sql)) {
+      echo "New record created successfully";
+}
+else {
+      die("Connection failed: " . mysqli_connect_error());
+}
+mysqli_close($conn);
+
+?>
