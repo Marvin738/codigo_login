@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>login</title>
+        <link href="styles/style.css" type="text/css" rel="stylesheet">
+
+    </head>
+    <body>
+        <div>
+           
+        <form action="conexion.php" method = "post">
+
+        <div class="contenedor_principal">
+                <div class="columna1">
+                    <img class="mano_icon" src="img/mano.png">
+                    <p class="hola_titulo">¡hola</p>
+                    <p> vamos a crear una cuenta</p>
+                    <div class="caja_texto">
+                        <p> Correo:</p>
+                        <input type="text" name="correo" class="caja_escrito" placeholder="correo electronico" required="required"/>
+                    </div>
+                    <div class="caja_texto">
+                        <p> usuario:</p>
+                        <input type="text" name="usuario" class="caja_escrito" placeholder="nombre del usuario" required="required"/>
+                    </div>
+                    <div class="caja_texto">
+                        <p> Nombre:</p>
+                        <input type="text" name="Nombre" class="caja_escrito" placeholder="Nombre" required="required"/>
+                    </div>
+                    <div class="caja_texto">
+                        <p> Contraseña:</p>
+                        <input type="text" name="pass" class="caja_escrito" placeholder="ingresa tu contraseña" required="required"/>
+                    </div>
+                    <div class="espacio_buttom">
+                        <button class="buttom">ingresar</button>
+                         <button class="buttom2">crear nuevo usuario</button>
+                    </div>
+                    <script> src="JS/nose.js" </script> <!--link= https://codepen.io/DonKarlssonSan/pen/OJEgxag -->
+        </form>
+            
+    </body>
+</html>
